@@ -7,7 +7,7 @@ RUN apk --update add gnutls gnutls-dev libmicrohttpd libmicrohttpd-dev gcc git m
     make && \
 
     cd .. && \
-    git clone https://github.com/OpenZWave/open-zwave-control-panel.git && \
+    git clone https://github.com/colinodell/open-zwave-control-panel.git && \
     cd open-zwave-control-panel && \
     sed -i 's/#GNUTLS := -lgnutls/GNUTLS := -lgnutls/' Makefile && \
     sed -i 's/#LIBUSB := -ludev/LIBUSB := -ludev/' Makefile && \
